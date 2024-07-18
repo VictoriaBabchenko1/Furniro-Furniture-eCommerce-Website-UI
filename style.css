@@ -17,7 +17,7 @@ body {
 
 .header {
     background-color: var(--white);
-    padding: 40px 0;
+    padding: 30px 50px;
     border-bottom: 1px solid var(--light-beige);
 }
 
@@ -53,15 +53,11 @@ body {
     font-size: 20px;
 }
 
-.product {
-    margin: 0 auto;
-}
-
 .product__breadcrumbs {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 35px 100px;
+    padding: 30px 100px;
     background-color: var(--light-beige);
     border-bottom: 1px solid var(--light-beige);
     gap: 20px;
