@@ -254,6 +254,11 @@ body {
     background-color: var(--soft-light-gray);
 }
 
+.product-card__link {
+    all: unset;
+    cursor: pointer;
+}
+
 .product-card-discount-30::before,
 .product-card-discount-50::before,
 .product-card-new::before {
