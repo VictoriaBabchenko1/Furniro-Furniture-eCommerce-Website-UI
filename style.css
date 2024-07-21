@@ -327,15 +327,13 @@ body {
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
     padding: 50px 0;
+    margin: 0 170px;
 }
 
 .footer__container {
     display: flex;
-    gap: 200px;
-    justify-content: center;
+    gap: 100px;
     border-bottom: 1px solid var(--light-gray);
 }
 
@@ -359,7 +357,6 @@ body {
 .footer__links {
     display: flex;
     gap: 100px;
-    justify-content: center;
 }
 
 .footer__title {
@@ -391,7 +388,5 @@ body {
 }
 
 .footer__bottom {
-    align-self: flex-start;
-    margin-left: 170px;
     margin-top: 35px;
 }
