@@ -375,9 +375,13 @@ body {
     font-weight: 500;
 }
 
+.footer__row-items {
+    display: flex;
+    gap: 25px;
+}
+
 .footer__link-email {
     color: var(--light-slate-gray);
-    margin-right: 25px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--black);
 }
