@@ -5,54 +5,69 @@
     <title>Furniro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container">
             <div class="header__logo">
                 <img class="header__logo-image" src="assets/images/logo.svg" alt="Company Logo">
             </div>
-            <nav class="header__nav">
-                <a href="#" class="header__link">Home</a>
-                <a href="#" class="header__link">Shop</a>
-                <a href="#" class="header__link">About</a>
-                <a href="#" class="header__link">Contact</a>
-            </nav>
+            <div class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__link">Home</a></li>
+                    <li><a href="shop.html" class="header__link">Shop</a></li>
+                    <li><a href="#" class="header__link">About</a></li>
+                    <li><a href="#" class="header__link">Contact</a></li>
+                </ul>
+            </div>
             <div class="header__icons">
-                <a href="#" class="header__icon"><img src="assets/images/account-alert-icon.svg" alt="Account"></a>
-                <a href="#" class="header__icon"><img src="assets/images/search-icon.svg" alt="Search"></a>
-                <a href="#" class="header__icon"><img src="assets/images/like-icon.svg" alt="Favorites"></a>
-                <a href="#" class="header__icon"><img src="assets/images/shopping-cart-icon.svg" alt="Shopping Cart"></a>
+                <ul class="header__icons-list">
+                    <li><a href="#" class="header__icon"><img src="assets/images/account-alert-icon.svg" alt="Account"></a></li>
+                    <li><a href="#" class="header__icon"><img src="assets/images/search-icon.svg" alt="Search"></a></li>
+                    <li><a href="#" class="header__icon"><img src="assets/images/like-icon.svg" alt="Favorites"></a></li>
+                    <li><a href="#" class="header__icon"><img src="assets/images/shopping-cart-icon.svg" alt="Shopping Cart"></a></li>
+                </ul>
             </div>
         </div>
     </header>
 
-    <main class="main">
+    <main class="product">
         <div class="product__breadcrumbs">
             <a href="#" class="product__breadcrumb">Home</a>
             <img src="assets/images/dash-icon-arrow-up.svg" alt="Divider">
             <a href="#" class="product__breadcrumb">Shop</a>
-                <img src="assets/images/dash-icon-arrow-up.svg" alt="Divider">
+            <img src="assets/images/dash-icon-arrow-up.svg" alt="Divider">
             <span class="product__breadcrumb product__breadcrumb_current">Asgaard sofa</span>
         </div>
         <div class="product__content">
             <div class="product__gallery">
                 <div class="product__thumbnails">
-                    <img src="assets/images/sofa-1.svg" alt="Asgaard sofa thumbnail" class="product__thumbnail">
-                    <img src="assets/images/sofa-2.svg" alt="Asgaard sofa thumbnail" class="product__thumbnail">
-                    <img src="assets/images/sofa-3.svg" alt="Asgaard sofa thumbnail" class="product__thumbnail">
-                    <img src="assets/images/sofa-4.svg" alt="Asgaard sofa thumbnail" class="product__thumbnail">
+                    <div class="product__thumbnail">
+                        <img src="assets/images/selected-sofa-1.png" alt="Asgaard sofa thumbnail">
+                    </div>
+                    <div class="product__thumbnail">
+                        <img src="assets/images/selected-sofa-2.png" alt="Asgaard sofa thumbnail">
+                    </div>
+                    <div class="product__thumbnail">
+                        <img src="assets/images/selected-sofa-3.png" alt="Asgaard sofa thumbnail">
+                    </div>
+                    <div class="product__thumbnail">
+                        <img src="assets/images/selected-sofa-4.png" alt="Asgaard sofa thumbnail">
+                    </div>
                 </div>
-                <div class="product__image">
-                    <img src="assets/images/sofa-main.svg" alt="Asgaard sofa" class="product__image-main">
+                <div class="product__main-image-wrapper">
+                    <img src="assets/images/selected-sofa-main.png" alt="Asgaard sofa" class="product__main-image">
                 </div>
             </div>
-            <div class="product__details">
+            <div class="product__info">
                 <h1 class="product__title">Asgaard sofa</h1>
                 <p class="product__price">Rs. 250,000.00</p>
                 <div class="product__rating">
-                    <img class="product__stars" src="assets/images/rating-stars.svg" alt="stars">
+                    <span class="product__rating-star"><img src="assets/images/rating-star.svg" alt="rating-star"></span>
+                    <span class="product__rating-star"><img src="assets/images/rating-star.svg" alt="rating-star"></span>
+                    <span class="product__rating-star"><img src="assets/images/rating-star.svg" alt="rating-star"></span>
+                    <span class="product__rating-star"><img src="assets/images/rating-star.svg" alt="rating-star"></span>
+                    <span class="product__rating-star"><img src="assets/images/rating-star-half.svg" alt="rating-star"></span>
                     <span class="product__reviews">5 Customer Review</span>
                 </div>
                 <p class="product__description">Setting the bar as one of the loudest speakers in its class, the
@@ -60,28 +75,27 @@
                     audio which boasts a clear midrange and extended highs for a
                     sound.
                 </p>
-                <div class="product__sizes">
-                    <span class="product__option-label">Size</span>
-                    <div class="product__size-options">
-                        <img class="product__size" src="assets/images/size-L.svg" alt="L">
-                        <img class="product__size" src="assets/images/size-XL.svg" alt="XL">
-                        <img class="product__size" src="assets/images/size-XS.svg" alt="XS">
-                    </div>
+                <span class="product__option-label">Size</span>
+                <div class="product__size-options">
+                    <button class="product__size-btn product__size-btn_active">L</button>
+                    <button class="product__size-btn">XL</button>
+                    <button class="product__size-btn">XS</button>
                 </div>
-                <div class="product__colors">
-                    <span class="product__option-label">Color</span>
-                    <div class="product__color-options">
-                        <img class="product__color product__color--black" src="assets/images/color-purple.svg" alt="purple">
-                        <img class="product__color product__color--purple" src="assets/images/color-black.svg" alt="black">
-                        <img class="product__color product__color--gold" src="assets/images/color-gold.svg" alt="gold">
-                    </div>
+                <span class="product__option-label">Color</span>
+                <div class="product__color-options">
+                    <button class="product__color-btn product__color-btn-purple"></button>
+                    <button class="product__color-btn product__color-btn-black"></button>
+                    <button class="product__color-btn product__color-btn-gold"></button>
                 </div>
                 <div class="product__cart-actions">
-                    <button class="product__quantity-btn"><img src="assets/images/btn-quantity.svg" alt="btn-quantity"></button>
-                    <button class="product__cart-btn"><img src="assets/images/btn-cart.svg" alt="btn-cart"></button>
-                    <button class="product__compare-btn"><img src="assets/images/btn-compare.svg" alt="btn-compare"></button>
+                    <div class="product__quantity-control">
+                        <button class="product__quantity-decrement">-</button>
+                        <span class="product__quantity-value">1</span>
+                        <button class="product__quantity-increment">+</button>
+                    </div>
+                    <button class="product__cart-btn">Add To Cart</button>
+                    <button class="product__compare-btn">+ Compare</button>
                 </div>
-                <hr>
                 <div class="product__info-share-items">
                     <div class="product__info-share-items-labels">
                         <span class="product__info-share-label">SKU</span>
@@ -93,18 +107,18 @@
                         <span class="product__info-share-value">: SS001</span>
                         <span class="product__info-share-value">: Sofas</span>
                         <span class="product__info-share-value">: Sofa, Chair, Home, Shop</span>
-                        <span class="product__info-share-value_inline">:
+                        <div class="product__info-share-value_inline">:
                             <a href="#" class="product__share-icon"><img src="assets/images/icon-facebook.svg" alt="icon-facebook"></a>
                             <a href="#" class="product__share-icon"><img src="assets/images/icon-linkedin.svg" alt="icon-linkedin"></a>
                             <a href="#" class="product__share-icon"><img src="assets/images/icon-twitter.svg" alt="icon-twitter"></a>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="product-details">
             <div class="product-details__tabs">
-                <a href="#" class="product-details__tab product-details__tab--active">Description</a>
+                <a href="#" class="product-details__tab product-details__tab-active">Description</a>
                 <a href="#" class="product-details__tab">Additional Information</a>
                 <a href="#" class="product-details__tab">Reviews [5]</a>
             </div>
@@ -118,8 +132,8 @@
                         to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
                 </div>
                 <div class="product-details__images">
-                    <img src="assets/images/product-details-image-1.svg" alt="Sofa Image 1" class="product-details__image">
-                    <img src="assets/images/product-details-image-2.svg" alt="Sofa Image 2" class="product-details__image">
+                    <div class="product-details__image-wrapper"><img src="assets/images/product-details-image-1.png" alt="Sofa Image 1" class="product-details__image"></div>
+                    <div class="product-details__image-wrapper"><img src="assets/images/product-details-image-2.png" alt="Sofa Image 2" class="product-details__image"></div>
                 </div>
             </div>
         </div>
@@ -128,47 +142,126 @@
     <section class="related-products">
         <h2 class="related-products__title">Related Products</h2>
         <div class="related-products__list">
-            <div class="product-card product-card-discount-50">
-                <a href="#" class="product-card__link">
-                    <img src="assets/images/product-card-image-1.svg" alt="Syltherine" class="product-card__image">
-                    <div class="product-card__content">
-                        <h3 class="product-card__name">Syltherine</h3>
-                        <p class="product-card__description">Stylish cafe chair</p>
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/product-card-image-1.png" alt="Syltherine">
+                </div>
+                <div class="product__badge product__badge--sale">-30%</div>
+                <div class="product-card__content">
+                    <span class="product-card__name">Syltherine</span>
+                    <p class="product-card__description">Stylish cafe chair</p>
+                    <div class="product-card__prices">
                         <span class="product-card__price">Rp 2.500.000</span>
                         <span class="product-card__old-price">Rp 3.500.000</span>
                     </div>
-                </a>
+                </div>
+                <div class="product-card__overlay">
+                    <button class="product__overlay-cart-btn">Add to cart</button>
+                    <div class="product-card__overlay-actions">
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/share-icon.svg" alt="share-icon">
+                            <span class="product-card__overlay-action-text">Share</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/compare-icon.svg" alt="compare-icon">
+                            <span class="product-card__overlay-action-text">Compare</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/heart-icon.svg" alt="heart-icon">
+                            <span class="product-card__overlay-action-text">Like</span>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="product-card">
-                <a href="#" class="product-card__link">
-                    <img src="assets/images/product-card-image-2.svg" alt="Leviosa" class="product-card__image">
-                    <div class="product-card__content">
-                        <h3 class="product-card__name">Leviosa</h3>
-                        <p class="product-card__description">Stylish cafe chair</p>
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/product-card-image-2.png" alt="Leviosa">
+                </div>
+                <div class="product-card__content">
+                    <span class="product-card__name">Leviosa</span>
+                    <p class="product-card__description">Stylish cafe chair</p>
+                    <div class="product-card__prices">
                         <span class="product-card__price">Rp 2.500.000</span>
                     </div>
-                </a>
+                </div>
+                <div class="product-card__overlay">
+                    <button class="product__overlay-cart-btn">Add to cart</button>
+                    <div class="product-card__overlay-actions">
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/share-icon.svg" alt="share-icon">
+                            <span class="product-card__overlay-action-text">Share</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/compare-icon.svg" alt="compare-icon">
+                            <span class="product-card__overlay-action-text">Compare</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/heart-icon.svg" alt="heart-icon">
+                            <span class="product-card__overlay-action-text">Like</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="product-card product-card-discount-30">
-                <a href="#" class="product-card__link">
-                    <img src="assets/images/product-card-image-3.svg" alt="Lolito" class="product-card__image">
-                    <div class="product-card__content">
-                        <h3 class="product-card__name">Lolito</h3>
-                        <p class="product-card__description">Luxury big sofa</p>
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/product-card-image-3.png" alt="Lolito">
+                </div>
+                <div class="product__badge product__badge--sale">-50%</div>
+                <div class="product-card__content">
+                    <span class="product-card__name">Lolito</span>
+                    <p class="product-card__description">Luxury big sofa</p>
+                    <div class="product-card__prices">
                         <span class="product-card__price">Rp 7.000.000</span>
                         <span class="product-card__old-price">Rp 14.000.000</span>
                     </div>
-                </a>
+                </div>
+                <div class="product-card__overlay">
+                    <button class="product__overlay-cart-btn">Add to cart</button>
+                    <div class="product-card__overlay-actions">
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/share-icon.svg" alt="share-icon">
+                            <span class="product-card__overlay-action-text">Share</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/compare-icon.svg" alt="compare-icon">
+                            <span class="product-card__overlay-action-text">Compare</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/heart-icon.svg" alt="heart-icon">
+                            <span class="product-card__overlay-action-text">Like</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="product-card product-card-new">
-                <a href="#" class="product-card__link">
-                    <img src="assets/images/product-card-image-4.svg" alt="Respira" class="product-card__image">
-                    <div class="product-card__content">
-                        <h3 class="product-card__name">Respira</h3>
-                        <p class="product-card__description">Outdoor bar table and stool</p>
+            <div class="product-card">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/images/product-card-image-4.png" alt="Respira">
+                </div>
+                <div class="product__badge product__badge--new">New</div>
+                <div class="product-card__content">
+                    <span class="product-card__name">Respira</span>
+                    <p class="product-card__description">Outdoor bar table and stool</p>
+                    <div class="product-card__prices">
                         <span class="product-card__price">Rp 500.000</span>
                     </div>
-                </a>
+                </div>
+                <div class="product-card__overlay">
+                    <button class="product__overlay-cart-btn">Add to cart</button>
+                    <div class="product-card__overlay-actions">
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/share-icon.svg" alt="share-icon">
+                            <span class="product-card__overlay-action-text">Share</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/compare-icon.svg" alt="compare-icon">
+                            <span class="product-card__overlay-action-text">Compare</span>
+                        </button>
+                        <button class="product-card__overlay-action-btn">
+                            <img src="assets/images/heart-icon.svg" alt="heart-icon">
+                            <span class="product-card__overlay-action-text">Like</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <button class="related-products__button">Show More</button>
@@ -176,7 +269,7 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__brand">
+            <div class="footer__brand-info">
                 <h2 class="footer__logo">Furniro.</h2>
                 <address class="footer__address">
                     400 University Drive Suite 200 Coral
@@ -184,26 +277,22 @@
                     FL 33134 USA
                 </address>
             </div>
-            <div class="footer__links">
+            <div class="footer__columns">
+                <ul class="footer__column">
+                    <li class="footer__title">Links</li>
+                    <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Shop</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li class="footer__title">Help</li>
+                    <li class="footer__item"><a href="#" class="footer__link">Payment Options</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Returns</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Privacy Policies</a></li>
+                </ul>
                 <div class="footer__column">
-                    <h3 class="footer__title">Links</h3>
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Shop</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h3 class="footer__title">Help</h3>
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Payment Options</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Returns</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policies</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h3 class="footer__title">Newsletter</h3>
+                    <span class="footer__title">Newsletter</span>
                     <div class="footer__row-items">
                         <input type="email" placeholder="Enter Your Email Address" class="footer__item footer__input-email">
                         <button class="footer__item footer__subscribe-btn">Subscribe</button>
