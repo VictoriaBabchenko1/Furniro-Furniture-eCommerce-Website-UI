@@ -1,4 +1,4 @@
-@import "cssReset.css";
+@import "css-reset.css";
 
 :root {
     --black: #000000;
@@ -482,6 +482,7 @@ body {
     background-image: url("assets/images/shop-hero-img.png");
     width: 100%;
     min-height: 316px;
+    background-size: cover;
 }
 
 .shop__title {
