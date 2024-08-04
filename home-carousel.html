@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home-carousel-styles.css">
+</head>
+<body>
+<main class="inspiration">
+    <div class="inspiration__text">
+        <h2 class="inspiration__title">50+ Beautiful rooms inspiration</h2>
+        <p class="inspiration__description">Our designer already made a lot of beautiful prototypes of rooms that inspire you</p>
+        <button class="inspiration__button">Explore More</button>
+    </div>
+    <div class="inspiration__carousel">
+        <div class="carousel">
+            <div class="carousel__item carousel__item-active">
+                <img src="assets/images/carousel-image-1.png" alt="Room 1" class="carousel__image">
+                <div class="carousel__overlay">
+                    <div class="carousel__overlay-text">
+                        <span class="carousel__category">01 — Bed Room</span>
+                        <span class="carousel__title">Inner Peace</span>
+                    </div>
+                    <button class="carousel__button"><img src="assets/images/arrow-right.svg" alt="arrow-right"></button>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <img src="assets/images/carousel-image-2.png" alt="Room 2" class="carousel__image">
+            </div>
+            <div class="carousel__item">
+                <img src="assets/images/carousel-image-1.png" alt="Room 3" class="carousel__image">
+            </div>
+            <div class="carousel__item">
+                <img src="assets/images/carousel-image-2.png" alt="Room 4" class="carousel__image">
+            </div>
+
+            <div class="carousel__indicators">
+                <span class="carousel__indicator carousel__indicator-active" onclick="currentSlide(1)"></span>
+                <span class="carousel__indicator" onclick="currentSlide(2)"></span>
+                <span class="carousel__indicator" onclick="currentSlide(3)"></span>
+                <span class="carousel__indicator" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <button class="carousel__control-next" onclick="nextSlide()">
+            <img src="assets/images/carousel-control-next-icon.svg" alt="next slide">
+        </button>
+    </div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -3,12 +3,14 @@
 :root {
     --black: #000000;
     --white: #ffffff;
+    --gray: #616161;
     --slate-gray: #898989;
     --light-slate-gray: #9F9F9F;
     --light-gray: #D9D9D9;
     --soft-light-gray: #F4F5F7;
     --light-beige: #F9F1E7;
     --gold: #B88E2F;
+    --soft-light-gold: #FCF8F3;
     --purple: #816DFA;
     --coral-red: #E97171;
     --blue-green: #2EC1AC;
